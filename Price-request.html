@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Price-request</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link href="plugins/bootstrap-5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<!-- script
+	================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/price-request.js"></script>
+
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+<img src="./images/icon.png"  class="iconne"  alt="devis.images">
+
+<div id="overlayer">
+	<span class="loader">
+	  <div class="dot dot-1"></div>
+	  <div class="dot dot-2"></div>
+	  <div class="dot dot-3"></div>
+	</span>
+</div>
+<section class="request">
+<form action="#">
+	<h1 class="text-center">Demande de devis</h1>
+	<div class="progressbar">
+		<div class="progress" id="progress"></div>
+		<div class="progress-step progress-step-active" data-title="Intro">
+			<span class="progress-step-number"></span>
+		  </div>
+		  <div class="progress-step" data-title="Contact">
+			<span class="progress-step-number"></span>
+		  </div>
+		  <div class="progress-step" data-title="ID">
+			<span class="progress-step-number"></span>
+		  </div>
+		  <div class="progress-step" data-title="Password">
+			<span class="progress-step-number"></span>
+		  </div>
+		</div>
+		<div class="form-step form-step-active">
+			<div class="input-group">
+			  <label for="username">Code Postale</label>
+			  <input type="text" name="username" id="username" />
+			</div>
+			<div class="input-group">
+				<label for="position">Adresse</label>
+				<input type="text" name="position" id="position" />
+			  </div>
+			  <div class="btns-group">
+				<a href="#" class="btn btn-next width-50 ml-auto">Suivant</a>
+			  </div>
+			</div>
+			<div class="form-step">
+				<div class="input-group">
+				  <label for="phone">Téléphone</label>
+				  <input type="text" name="phone" id="phone" />
+				</div>
+				<div class="input-group">
+				  <label for="email">Adresse e-mail</label>
+				  <input type="text" name="email" id="email" />
+				</div>
+				<div class="btns-group">
+					<a href="#" class="btn btn-prev">Précédent</a>
+					<a href="#" class="btn btn-next">Suivant</a>
+				  </div>
+				</div>
+				<div class="form-step">
+					<div class="input-group">
+					  <label for="dob">type de traveaux</label>
+					  <input type="date" name="dob" id="dob" />
+					</div>
+					<div class="input-group">
+						<label for="ID">Dimension</label>
+						<input type="number" name="ID" id="ID" />
+					  </div>
+					  <div class="btns-group">
+						<a href="#" class="btn btn-prev">Précédent</a>
+						<a href="#" class="btn btn-next">Suivant</a>
+					  </div>
+					</div>
+					<div class="form-step">
+					  <div class="input-group">
+						<label for="password">Model de stor banne</label>
+						<input type="password" name="password" id="password" />
+					  </div>
+					  <div class="input-group">
+						<label for="confirmPassword">Laissez nous votre message</label>
+						<input type="password" name="confirmPassword" id="confirmPassword" />
+					  </div>
+					  <div class="btns-group">
+						<a href="#" class="btn btn-prev">Précédent</a>
+						<input type="submit" value="Soumettre" class="btn" />
+					  </div>
+					</div>
+
+</form>
+
+</section>
+<section class="google-map">
+	<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://getasearch.com/fmovies"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
+</section>
+
+
+<footer class="padding-large text-white bg-dark">
+	<div class="container">
+	    <div class="row">
+	    	
+	    	<div class="col-12 col-md-6">
+		        <img src="./images/Logo natura 2.png">
+		        <p>
+		        	<a href="mailto:hello@templatesjungle.com">hello@HELLO.com</a><br>
+		        	15Th Street Avenue, New York, USA<br>
+		        	011-554-8798-6556
+		        </p>
+		        <ul class="justify-content-start list-unstyled d-flex">
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-skype"></ion-icon></a></li>
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-pinterest"></ion-icon></a></li>
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+		        </ul>
+		    </div>
+
+		    <div class="col-4 col-md-2">
+		        <ul class="nav flex-column">
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+		        </ul>
+		    </div>
+
+	      
+	    </div>
+
+	    <div class="d-flex justify-content-between flex-wrap py-4 my-4 border-top">
+	      <p>© 2024</p>
+	      
+	    </div>
+	</div>
+</footer>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="plugins/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
